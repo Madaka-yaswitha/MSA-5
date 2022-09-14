@@ -24,12 +24,12 @@ public class ElectronicsController {
 	public Electronics addElectronics(@RequestBody Electronics k) {
 		return service.saveElectronics(k);
 	}
-	@PostMapping("/addElectronics")
+	@PostMapping("/addElectronicss")
 	public List<Electronics>addElectronicss(@RequestBody List<Electronics> m) {
 		return service.saveElectronicss(m);
 		
 	}
-	@GetMapping("/Electronics")
+	@GetMapping("/Electronicss")
 	public Optional<Electronics>FindAllElectronics() {
 		return service.getElectronics();
 	}
